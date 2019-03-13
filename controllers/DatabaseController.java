@@ -2,31 +2,47 @@
  * 
  */
 package controllers;
-
+import dblibrary.project.csci230.*;
 /**
  * @author nhoberg001
  *
  */
+
+
+
 public class DatabaseController {
 
 	/**
 	 * 
 	 */
+	
+	private UniversityDBLibrary dbLibary;
+	
 	public DatabaseController() {
-		// TODO Auto-generated constructor stub
+		this.dbLibary = new UniversityDBLibrary(database, username, password);
 	}
 
 	/**
 	 * 
 	 */
-	public void addUser() //necessimos paramatinos
-	{}
+	public int addUser(java.lang.String firstName, java.lang.String lastName,
+			java.lang.String username, java.lang.String password, char type) 
+	{
+		return dbLibary.users_addUser(firstName, lastName, username, password, type);
+	}
 	
 	/**
 	 * 
 	 */
-	public void addUniversity() //necessimos paramatinos
-	{}
+	public int addUniversity(java.lang.String school, java.lang.String state, java.lang.String location,
+			java.lang.String control, int numberOfStudents, double percentFemales, double SATVerbal, double SATMath,
+			double expenses, double percentFinancialAid, int numberOfApplicants, double percentAdmitted, 
+			double percentEnrolled, int academicsScale, int socialScale, int qualityOfLifeScale)
+	{
+		return dbLibary.university_addUniversity(school, state, location, control, numberOfStudents, percentFemales,
+				SATVerbal, SATMath, expenses, percentFinancialAid, numberOfApplicants, percentAdmitted,
+				percentEnrolled, academicsScale, socialScale, qualityOfLifeScale);
+	}
 	
 	/**
 	 * 
@@ -38,8 +54,10 @@ public class DatabaseController {
 	/**
 	 * 
 	 */
-	public void getUsers()
-	{}
+	public java.lang.String[][] getUsers()
+	{
+		return dbLibary.university_getUsers();
+	}
 	
 	/**
 	 * 
@@ -50,22 +68,35 @@ public class DatabaseController {
 	/**
 	 * 
 	 */
-	public void getListOfUniversities()
-	{}
+	public java.lang.String[][] getListOfUniversities()
+	{
+		return dbLibrary.university_getUniversities();
+	}
 	
 	/**
 	 * 
 	 * @param uniName
 	 */
-	public void editUniversity(String uniName) 
-	{}
+	public int editUniversity(java.lang.String school, java.lang.String state, java.lang.String location,
+			java.lang.String control, int numberOfStudents, double percentFemales, double SATVerbal,
+			double SATMath, double expenses, double percentFinancialAid, int numberOfApplicants,
+			double percentAdmitted,double percentEnrolled, int academicsScale, 
+			int socialScale, int qualityOfLifeScale) 
+	{
+		return dbLibary.univeristy_editUniversity(school, state, location, control, numberOfStudents, percentFemales,
+				SATVerbal, SATMath, expenses, percentFinancialAid, numberOfApplicants, percentAdmitted, percentEnrolled,
+				academicsScale, socialScale, qualityOfLifeScale);
+	}
 	
 	/**
 	 * 
 	 * @param username
 	 */
-	public void editUser(String username)
-	{}
+	public int editUser(java.lang.String username, java.lang.String firstName, java.lang.String lastName,
+			java.lang.String password, char type, char status)
+	{
+		return dbLibary.user.editUser(username, firstName, lastName, password, type, status);
+	}
 	
 	
 	/**
