@@ -17,6 +17,18 @@ public class AccountController {
 	}
 
 	/**
+	 * 
+	 */
+	public void setAccountInfo()
+	{}
+	
+	/**
+	 * 
+	 */
+	public void changePassword()
+	{}
+	
+	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {

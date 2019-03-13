@@ -17,6 +17,24 @@ public class SearchController {
 	}
 
 	/**
+	 * 
+	 */
+	public void searchResults()
+	{}
+	
+	/**
+	 * 
+	 */
+	public void searchUniversities()
+	{}
+	
+	/**
+	 * 
+	 */
+	public void getUniversities()
+	{}
+	
+	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
