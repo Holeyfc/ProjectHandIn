@@ -13,7 +13,10 @@ public class University extends UniversityController
 	public int academicScale, socialScale, lifeScale;
 
 	
+	
+	
 	/**
+	 * get the details of the university given in the parameter
 	 * @param name
 	 */
 	public String getDetails(String name)
