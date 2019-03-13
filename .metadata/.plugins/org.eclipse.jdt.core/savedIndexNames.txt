@@ -1,3 +1,0 @@
-INDEX VERSION 1.130+/net/home/mlee002/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
-1746108537.index
-3047144398.index
