@@ -1,0 +1,55 @@
+/**
+ * 
+ */
+
+/**
+ * @author HoleyFanClub
+ * @version 1.0
+ */
+public class UserClass {
+
+	private String password;
+	private Character type, status;
+	public String username, first, last;
+	
+	
+	/**
+	 * 
+	 */
+	public UserClass() 
+	{
+		
+	}
+	
+		
+	public String getPassword()
+	{
+		return this.password;
+	}
+	
+	public Character getType()
+	{
+		return this.type;
+	}
+	
+	public Character getStatus()
+	{
+		return this.status;
+	}
+	
+	public void viewProfile()
+	{
+		
+		
+	}
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}
