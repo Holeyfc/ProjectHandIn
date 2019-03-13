@@ -1,0 +1,20 @@
+package Driver;
+import javax.swing.*;
+public class Driver {
+	
+	public static void main(String[] args)
+	{
+		new Driver();
+	}
+	
+	public Driver()
+	{
+		String username = JOptionPane.showInputDialog("please enter your username");
+		String password = JOptionPane.showInputDialog("please enter your password");
+		
+		Account user = new Account(username, password);
+	}
+	
+	
+
+}
