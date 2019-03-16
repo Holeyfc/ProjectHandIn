@@ -23,4 +23,13 @@ public class UserUI
  {
  }
 
+ public void searchForUser(String username)
+ {
+ this.user.searchForUser(username);
+ }
+ 
+ public void logout()
+ {
+ this.user.logout();
+ }
 }

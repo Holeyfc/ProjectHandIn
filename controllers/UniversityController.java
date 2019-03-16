@@ -8,19 +8,19 @@ package controllers;
  *
  */
 public class UniversityController {
-
-	/**
-	 * 
-	 */
-
-	public DatabaseController database;
-	
-	public UniversityController() {
-		this.database = new DatabaseController();
-	}
-
-	/**
-	 * @param args
-	 */
-
+  
+  /**
+   * 
+   */
+  
+  public DatabaseController database;
+  
+  public UniversityController() {
+    this.database = new DatabaseController();
+  }
+  
+  /**
+   * @param args
+   */
+  
 }
