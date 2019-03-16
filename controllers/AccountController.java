@@ -3,16 +3,8 @@
  */
 package controllers;
 
-/**
- * @author nhoberg001
- *
- */
 public class AccountController {
 
-	/**
-	 * 
-	 */
-	
 	public DatabaseController database;
 	
 	public AccountController() {

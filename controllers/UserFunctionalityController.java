@@ -12,6 +12,7 @@ public class UserFunctionalityController {
 	/**
 	 * 
 	 */
+<<<<<<< HEAD
 	
 	public DatabaseController database;
 	
@@ -52,16 +53,37 @@ public class UserFunctionalityController {
 	/**
 	 * 
 	 */
+=======
+	public UserFunctionalityController() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void saveSchool()
+	{}
+	
+	public void editProfile(String username)
+	{}
+	
+	public void getUniversity()
+	{}
+	
+	public void searchUsersSavedSchools(String username)
+	{}
+	
+>>>>>>> 279b2460967aa8a3f7afada76c9163d896eb0c62
 	public void getSavedSchools()
 	{}
 	
 	/**
+<<<<<<< HEAD
 	 * 
 	 */
 	public void saveToProfile(University university)
 	{}
 	
 	/**
+=======
+>>>>>>> 279b2460967aa8a3f7afada76c9163d896eb0c62
 	 * @param args
 	 */
 	public static void main(String[] args) {

@@ -12,24 +12,35 @@ public class AdminFunctionalityController {
 	/**
 	 * 
 	 */
+<<<<<<< HEAD
 	
 	public DatabaseController database;
 	
 	public AdminFunctionalityController() {
 		this.database = new DatabaseController();
+=======
+	public AdminFunctionalityController() {
+		// TODO Auto-generated constructor stub
+>>>>>>> 279b2460967aa8a3f7afada76c9163d896eb0c62
 	}
 
 	/**
 	 * 
 	 */
+<<<<<<< HEAD
 	public void getListOfUsers() 
 	{
 		this.database.getUsers();
 	}
+=======
+	public void getListOfUsers() //necessimos paramatinos
+	{}
+>>>>>>> 279b2460967aa8a3f7afada76c9163d896eb0c62
 	
 	/**
 	 * 
 	 */
+<<<<<<< HEAD
 	public void addNewUniversity(java.lang.String school, java.lang.String state, java.lang.String location,
 			java.lang.String control, int numberOfStudents, double percentFemales, double SATVerbal, double SATMath,
 			double expenses, double percentFinancialAid, int numberOfApplicants, double percentAdmitted, 
@@ -39,6 +50,10 @@ public class AdminFunctionalityController {
 				SATVerbal, SATMath, expenses, percentFinancialAid, numberOfApplicants, percentAdmitted,
 				percentEnrolled, academicsScale, socialScale, qualityOfLifeScale);
 	}
+=======
+	public void addNewUniversity() //necessimos paramatinos
+	{}
+>>>>>>> 279b2460967aa8a3f7afada76c9163d896eb0c62
 	
 	/**
 	 * 

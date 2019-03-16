@@ -12,6 +12,7 @@ public class LogonController {
 	/**
 	 * 
 	 */
+<<<<<<< HEAD
 	
 	public DatabaseController database;
 	
@@ -38,6 +39,13 @@ public class LogonController {
 	{}
 	
 	/**
+=======
+	public LogonController() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+>>>>>>> 279b2460967aa8a3f7afada76c9163d896eb0c62
 	 * @param args
 	 */
 	public static void main(String[] args) {

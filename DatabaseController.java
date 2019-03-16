@@ -25,26 +25,15 @@ public class DatabaseController {
 	/**
 	 * 
 	 */
-<<<<<<< HEAD
-	public int addUser(User user) 
-	{
-		return dbLibary.users_addUser(user);
-=======
 	public int addUser(java.lang.String firstName, java.lang.String lastName,
 			java.lang.String username, java.lang.String password, char type) 
 	{
 		return dbLibary.users_addUser(firstName, lastName, username, password, type);
->>>>>>> 279b2460967aa8a3f7afada76c9163d896eb0c62
 	}
 	
 	/**
 	 * 
 	 */
-<<<<<<< HEAD
-	public int addUniversity(University uni)
-	{
-		return dbLibary.university_addUniversity(uni);
-=======
 	public int addUniversity(java.lang.String school, java.lang.String state, java.lang.String location,
 			java.lang.String control, int numberOfStudents, double percentFemales, double SATVerbal, double SATMath,
 			double expenses, double percentFinancialAid, int numberOfApplicants, double percentAdmitted, 
@@ -53,7 +42,6 @@ public class DatabaseController {
 		return dbLibary.university_addUniversity(school, state, location, control, numberOfStudents, percentFemales,
 				SATVerbal, SATMath, expenses, percentFinancialAid, numberOfApplicants, percentAdmitted,
 				percentEnrolled, academicsScale, socialScale, qualityOfLifeScale);
->>>>>>> 279b2460967aa8a3f7afada76c9163d896eb0c62
 	}
 	
 	/**
@@ -75,14 +63,7 @@ public class DatabaseController {
 	 * 
 	 */
 	public void getUniversity()
-<<<<<<< HEAD
-	{
-		this.dblibrary.universities_getUniveristies();
-		//for loop for finding the uni by the search criteria given i.e. params
-	}
-=======
 	{}
->>>>>>> 279b2460967aa8a3f7afada76c9163d896eb0c62
 	
 	/**
 	 * 
@@ -96,11 +77,6 @@ public class DatabaseController {
 	 * 
 	 * @param uniName
 	 */
-<<<<<<< HEAD
-	public int editUniversity(University uni) 
-	{
-		return dbLibary.univeristy_editUniversity(uni);
-=======
 	public int editUniversity(java.lang.String school, java.lang.String state, java.lang.String location,
 			java.lang.String control, int numberOfStudents, double percentFemales, double SATVerbal,
 			double SATMath, double expenses, double percentFinancialAid, int numberOfApplicants,
@@ -110,20 +86,12 @@ public class DatabaseController {
 		return dbLibary.univeristy_editUniversity(school, state, location, control, numberOfStudents, percentFemales,
 				SATVerbal, SATMath, expenses, percentFinancialAid, numberOfApplicants, percentAdmitted, percentEnrolled,
 				academicsScale, socialScale, qualityOfLifeScale);
->>>>>>> 279b2460967aa8a3f7afada76c9163d896eb0c62
 	}
 	
 	/**
 	 * 
 	 * @param username
 	 */
-<<<<<<< HEAD
-	public int editUser(User user)
-	{
-		return dbLibary.user.editUser(user);
-	}
-	
-=======
 	public int editUser(java.lang.String username, java.lang.String firstName, java.lang.String lastName,
 			java.lang.String password, char type, char status)
 	{
@@ -138,6 +106,5 @@ public class DatabaseController {
 		// TODO Auto-generated method stub
 
 	}
->>>>>>> 279b2460967aa8a3f7afada76c9163d896eb0c62
 
 }
