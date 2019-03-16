@@ -12,10 +12,31 @@ public class LogonController {
 	/**
 	 * 
 	 */
+	
+	public DatabaseController database;
+	
 	public LogonController() {
-		// TODO Auto-generated constructor stub
+		this.database = new DatabaseController();
 	}
 
+	/**
+	 * 
+	 * @param username
+	 * @param password
+	 */
+	public void login(String username, String password)
+	{
+
+	}
+	
+	//from communication
+	//public User findByMemberName()
+	/**
+	 * 
+	 */
+	public void logout()
+	{}
+	
 	/**
 	 * @param args
 	 */

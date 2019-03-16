@@ -12,10 +12,31 @@ public class SearchController {
 	/**
 	 * 
 	 */
+	
+	public DatabaseController database;
+	
 	public SearchController() {
-		// TODO Auto-generated constructor stub
+		this.database = new DatabaseController();
 	}
 
+	/**
+	 * 
+	 */
+	public void searchResults()
+	{}
+	
+	/**
+	 * 
+	 */
+	public void searchUniversities()
+	{}
+	
+	/**
+	 * 
+	 */
+	public void getUniversities()
+	{}
+	
 	/**
 	 * @param args
 	 */

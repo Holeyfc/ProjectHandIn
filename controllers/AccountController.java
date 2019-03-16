@@ -12,10 +12,25 @@ public class AccountController {
 	/**
 	 * 
 	 */
+	
+	public DatabaseController database;
+	
 	public AccountController() {
-		// TODO Auto-generated constructor stub
+		this.database = new DatabaseController();
 	}
 
+	/**
+	 * 
+	 */
+	public void setAccountInfo()
+	{}
+	
+	/**
+	 * 
+	 */
+	public void changePassword()
+	{}
+	
 	/**
 	 * @param args
 	 */

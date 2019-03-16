@@ -12,8 +12,11 @@ public class UniversityController {
 	/**
 	 * 
 	 */
+	
+	public DatabaseController database;
+	
 	public UniversityController() {
-		// TODO Auto-generated constructor stub
+		this.database = new DatabaseController();
 	}
 
 	/**
