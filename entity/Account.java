@@ -3,20 +3,20 @@
 package entity;
 import dblibrary.project.csci230.*;
 public class Account {
-	
-	String password;
-	String username;
-	char status;
-	char type;
-	
-	public void logout()
-	{
-		
-	}
-	
-	public void login()
-	{
-	 UniversityDBLibrary lib = new UniversityDBLibrary(username, password)
-	}
+ 
+ String password;
+ String username;
+ char status;
+ char type;
+ 
+ public void logout()
+ {
+  
+ }
+ 
+ public void login()
+ {
+  UniversityDBLibrary lib = new UniversityDBLibrary(username, password);
+ }
   
 }

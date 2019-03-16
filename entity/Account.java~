@@ -9,12 +9,6 @@ public class Account {
 	char status;
 	char type;
 	
-	public account(String usr, String pass)
-	{
-		this.username = usr;
-		this.password = pass;
-		System.out.println("acc");
-	}
 	public void logout()
 	{
 		

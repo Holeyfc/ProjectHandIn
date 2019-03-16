@@ -1,7 +1,7 @@
 /**
  * Admin confirms that the account exist
  */
-package UI;
+package controllers;
 
 /**
  * @author HoleyFanClub
@@ -10,9 +10,10 @@ package UI;
  */
 public class AdminUI extends Admin {
 
+  public AdminFunctionalityController adFuncController = new AdminFunctionalityConroller();
  
  public AdminUI() {
-  // TODO Auto-generated constructor stub
+
  }
 
  /**
@@ -21,7 +22,7 @@ public class AdminUI extends Admin {
  public string confirmMessage()
  {
    
- System.out.println("Successful Login!")
+ System.out.println("Successful Login!");
  }
  
  
@@ -35,8 +36,31 @@ public class AdminUI extends Admin {
   
  }
 
- public void viewListOfUser()
+ public void viewListOfUsers()
  {
-   // TODO Auto-generated constructor stub
+   int j = 0;
+   String[][] users = this.adFuncController.getListOfUsers();
+     for (int i =0;  i < users.length(); i++)
+   {
+     for(;j < 5; j++)
+     {
+   System.out.println(users[i][j]);
+   }
+   }
  }
+ 
+ public void addNewUser(User user)
+ {
+  int passFail =this.adFuncController.addNewUser(user); 
+  if(passFail == 0)
+  {System.out.println("Your attempt to add a new user was successful");}
+  else
+  {System.out.println("Your attmept to add a new user failed");}
+ }
+ 
+ public void changePassword(String username, String password)
+ {
+ this.adFuncController.resetUsersPassword(username, password);
+ }
+ 
 }
