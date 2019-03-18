@@ -13,7 +13,7 @@ public class AdminFunctionalityController {
   /**
    * 
    */
-  
+  public LogonController logger;
   public DatabaseController database;
   
   public AdminFunctionalityController() 
@@ -66,7 +66,7 @@ public class AdminFunctionalityController {
   }
   
   /**
-   * 
+   * UC16
    * @param uniName
    */
   public int deleteUniversity(String uniName)
@@ -84,4 +84,19 @@ public class AdminFunctionalityController {
     return this.database.getUsers();
   }
   
+  /**
+   * 
+   */
+  public void logout()
+  {
+    this.logger.logout();
+  }
+  
+  /**
+   * 
+   */
+  public void login(String username, String password, Character type)
+  {
+    this.logger.login(username, password, type);
+  }
 }

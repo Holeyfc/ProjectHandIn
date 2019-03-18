@@ -75,7 +75,7 @@ public class AdminUI extends Admin {
   }
   
   /**
-   * 
+   * UC16
    */
   public void deleteUniversity(String uniName)
   {
@@ -87,5 +87,11 @@ public class AdminUI extends Admin {
   }
   
   
-  
+  /**
+   * 
+   */
+  public void login(String username, String password, Character type)
+  {
+    this.adFuncController.login(username, password, type);
+  }
 }

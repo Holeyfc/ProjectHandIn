@@ -14,6 +14,7 @@ public class UserFunctionalityController {
    * 
    */
   
+  public LogonController logger;
   public DatabaseController database;
   
   public UserFunctionalityController() {
@@ -46,28 +47,40 @@ public class UserFunctionalityController {
   /**
    * 
    */
-  
-  public void saveSchool()
-  {}
-  
-  
   public void getUniversity()
   {}
   
   
   /**
-   * 
+   * UC8
    */
-  public void saveToProfile(University university)
+  public int saveSchool(String username, String uniName)
   {
-    
+    return this.database.saveSchool(username, uniName);
   }
   
+  /**
+   * 
+   */
   public void searchForUser(String username)
   {
     
   }
   
+  /**
+   * 
+   */
   public void logout()
-  {}
+  {
+    this.logger.logout();
+  }
+  
+  /**
+   * 
+   */
+  public void login(String username, String password, Character type)
+  {
+    this.logger.login(username, password, type);
+  }
+  
 }
