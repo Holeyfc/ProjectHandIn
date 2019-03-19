@@ -31,6 +31,8 @@ public class Driver implements ActionListener{
   JFrame frame;
   JButton uc1, uc2, uc3, uc4, uc5, uc6, uc7, uc8, uc9, uc10, uc11, uc12, uc13, uc15, uc16, uc17, uc18, uc19, uc20;
   JPanel panel;
+  Account2 account2 = new Account2();
+  Admin admin = new Admin();
  public static void main(String[] args)
  {
   new Driver();
@@ -38,9 +40,6 @@ public class Driver implements ActionListener{
  
  public Driver()
  {
-  String username = JOptionPane.showInputDialog("please enter your username");
-  String password = JOptionPane.showInputDialog("please enter your password");
-  this.lib = new UniversityDBLibrary(username, password);
   this.panel = new JPanel(new GridLayout(19, 1));
   this.frame = new JFrame("demo");
   this.frame.setSize(1000,1000);
@@ -66,6 +65,28 @@ public class Driver implements ActionListener{
   this.uc18 = new JButton("uc18: search for other student's saved schools (extends uc1)");
   this.uc19 = new JButton("uc19: delete user (extends uc9)");
   this.uc20 = new JButton("uc20: logout (extends uc1)");
+  
+  this.uc1.addActionListener(this);
+  this.uc2.addActionListener(this);
+  this.uc3.addActionListener(this);
+  this.uc4.addActionListener(this);
+  this.uc5.addActionListener(this);
+  this.uc6.addActionListener(this);
+  this.uc7.addActionListener(this);
+  this.uc8.addActionListener(this);
+  this.uc9.addActionListener(this);
+  this.uc10.addActionListener(this);
+  this.uc11.addActionListener(this);
+  this.uc12.addActionListener(this);
+  this.uc13.addActionListener(this);
+  this.uc15.addActionListener(this);
+  this.uc16.addActionListener(this);
+  this.uc17.addActionListener(this);
+  this.uc18.addActionListener(this);
+  this.uc19.addActionListener(this);
+  this.uc20.addActionListener(this);
+
+  
   
   //all buttons must be added to a panel
   this.panel.add(this.uc1);
@@ -95,8 +116,7 @@ public class Driver implements ActionListener{
  }
  public void actionPerformed(ActionEvent event)
  {
-   Account2 account2 = new Account2();
-   Admin admin = new Admin();
+   
    if(this.uc1 == event.getSource())
         {
      account2.login();
