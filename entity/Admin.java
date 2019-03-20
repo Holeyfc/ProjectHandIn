@@ -25,9 +25,9 @@ public class Admin extends Account2
    * @param password the password of the account
    * param type the account type, admin or student
    */
-  public Admin(String userName, String password, char type) 
+  public Admin() 
   {
-    Account2 admin = Account2(this.userName, this.password, this.type);
+    Account2 admin = Account2();
   }
   
   /**
