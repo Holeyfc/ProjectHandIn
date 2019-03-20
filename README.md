@@ -1,1 +1,1 @@
-# ProjectHandIn
+Run the driver class.  When you hit run, 20 buttons will apear with each of the use cases,  if you hit one that extends another one, it will simply assume youve chosen the other ones first.  THE ONLY ONE YOU MUST DO IN ORDER IS SEARCH AND THEN SEARCH RESULTS, doing these out of orders will result in an error.
